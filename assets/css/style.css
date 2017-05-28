@@ -106,3 +106,133 @@ body{
 .dropdown1:hover .dropbtn {
     background-color: #3e8e41;
 }
+.cate-menu{
+  position: relative;
+    display: block;
+    color: #1c1c1c;
+    text-transform: uppercase;
+    background: #f4f5f6;
+    margin: 0 0 10px 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 13px 15px;
+    padding-left: 42px;
+    border-left: 2px solid transparent;
+    border-radius: 0px 2px 2px 0px;
+    transition: all 300ms ease-in;
+    -webkit-transition: all 300ms ease-in;
+
+}
+.cate-menu:hover{
+  text-decoration: none;
+  color: red;
+}
+.title-rest:after{
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  width: 30px;
+  border-bottom: 1px solid #e9b947;
+}
+.port-image
+{
+    width: 100%;
+}
+
+.each-item
+{
+    position:relative;
+    overflow:hidden;
+}
+
+.each-item:hover .cap2, .each-item:hover .cap1
+{
+    left:0px;
+}
+
+.cap1
+{
+    position:absolute;
+    width:100%;
+    height:100%;
+    text-align: center;
+    background: rgba(255, 170, 127, 0.72);
+    top:0px;
+    left:-100%;
+    padding:10px;
+    text-align: center;
+    transition: all .5s;
+}
+
+.cap2
+{
+    position:absolute;
+    width:100%;
+    height:30%;
+    text-align: center;
+    background:rgb(244, 245, 246);
+    bottom:0px;
+    left:100%;
+    padding:10px;
+    vertical-align: middle;
+    transition: all .5s;
+}
+.cap3
+{
+    position:absolute;
+    width:100%;
+    height:30%;
+    background:rgba(0, 178, 255, 0.5);
+    bottom:0px;
+    left:100%;
+    padding:10px;
+}
+.filter{
+  padding: 10px;
+}
+.des-rest{
+   display: block; /* or inline-block */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 3.6em;
+  line-height: 1.8em;
+}
+.res-img{
+      display: block;
+    width: 100%;
+    height: auto;
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+}
+.res-img:hover{
+  opacity: 0.80;
+    -webkit-transform: scale(1.03,1.03);
+}
+.in-thum{
+  padding: 26px;
+  margin: 5px;
+}
+.thum-h1{
+  margin-top: 90px;
+}
+.thum-h2{
+  margin-top: 0;
+}
+.filter:after{
+  margin-bottom: 100px;
+}
+.dest-pro{
+  margin-top: 20px;
+  line-height: 30px;
+}
+.margin{
+  margin-top:40px;
+}
+.title-2{
+  padding: 10px;
+}
