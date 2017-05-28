@@ -1,0 +1,107 @@
+.footer{
+  			background-color: #333;
+  			padding:50px 0px 0px 0px;	
+  			margin:0 auto;
+  		}
+  		.footer_under{
+  			padding: 20px 10px 10px 10px;
+  			text-align: center;
+  			background-color: black;
+  			height: 50px;
+  		}
+		.footer_under_copy{
+			color:white;
+		}
+		.footer_under_food{
+			color: #e9b947;
+		}
+		/*body of footer*/
+		.footer_contian{
+			margin:0 auto;
+			padding:0px;
+
+		}
+		.footer_contian_1{
+			height: 350px;
+		}
+		.footer_contian_1 p{
+			line-height: 25px;
+		    font-family: "Josefin Sans", sans-serif;
+		    font-size: 15px;
+		    color:#aaaaaa;
+		}
+		.footer_contian_2{
+			height: 350px;
+		}
+		.footer_contian_3{
+			height: 350px;
+		}
+		.footer_contian_4{
+			height: 350px;
+		}
+		.footer_phone{
+			color: #aaaaaa;
+			
+		}
+		.footer_contian_1_size_30{
+			font-size:30px;color:#e6b800;
+		}
+		.footer_contian_1_size_35{
+			font-size:35px;color:#e6b800;
+		}
+		.footer_contian_1_size_20{
+			font-size:20px;color:#e6b800;
+		}
+		.footer_contian_2_style{
+			color:white;font-size: 14px; 
+			 font-family: "Josefin Sans", sans-serif;
+		}
+		.footer_contian_2 ul{
+			list-style-type: none;
+			color:#e6b800 ;
+			line-height: 45px;padding-left: 20px;
+		}
+		.footer_contian_3 img{
+			margin: 25px 15px 0px 10px ;
+			vertical-align: middle;
+		}
+		.footer_contian_3_color{
+			color:rgb(255,197,157);
+		}
+		.footer_contian_3_icon{
+			font-size:18px;color:#e6b800	
+		}
+		.footer_contian_4_fafa_color{
+			color: white ;
+			font-size: 30px;
+			margin-left: 30px;	
+		}
+		.footer_contian_4_input_field{
+			text-align: center; 
+			height: 40px;
+			width: 194px ;
+			vertical-align: 75%;
+			margin-top: 30px;
+			border-radius: 10px;
+		}
+		.footer_contian_4 :hover,.footer_contian_2 ul :hover{
+			color: yellow;
+			text-decoration: none;
+		}
+		.footer_contian_4_botton{
+
+			font-size:48px;color:#e6b800;text-decoration: none;cursor: pointer; ;background-color:rgba(12,12,12); 
+		}
+		.footer_contian_4_getnews{
+			line-height:60px;
+		}
+		.footer_contian_2 a{
+			color: #e9b947;
+		}
+		.footer_contian_4 input[type=text]:hover{
+			color: black;
+			width: 230px;
+			background-color:  #d1e0e0;
+			-webkit-transition: width .35s ease-in-out;
+ 			transition: width .35s ease-in-out;
+		}
