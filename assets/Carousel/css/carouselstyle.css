@@ -1,0 +1,27 @@
+
+    .Slide-Header
+    {
+      display: block;
+      z-index: 2;
+    }
+    .Slide-Header .head
+    {
+      font-size: 36pt;
+      color: orange;
+      text-align: center;
+      font-family: Forte;
+    }
+   
+    .Slide-Header .tail
+    {
+      font-size: 24pt;
+      color: brown;
+      text-align: center;
+      font-family: Forte;
+    }
+    .bx-wrapper
+    {
+      z-index: 1;
+      background-color: transparent;
+    }
+

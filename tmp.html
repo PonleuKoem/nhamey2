@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/js/bootstrap.js">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/menu.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/wowslider/engine1/style.css" />
+  <script type="text/javascript" src="assets/wowslider/engine1/jquery.js"></script>
+  <script type="text/javascript" src="assets/js/menu.js"></script>
+   <!--carouselpart-->
+  <link rel="stylesheet" type="text/css" href="assets/Carousel/css/carouselstyle.css" />
+  <script type="text/javascript" src="assets/Caraousel/js/carouselscript.js"></script>
+  <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  <!--end of carouselpart-->
+  <!--bx Slide Plug in-->
+    <script src="assets/bxSlide/jquery.bxslider.js"></script>
+    <script src="assets/bxSlide/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="assets/bxSlide/jquery.bxslider.css">
+    <link rel="stylesheet" href="assets/bxSlide/jquery.bxslider.min.css">
+  <!--bx Slide Plug in-->
+  <style>
+    
+  </style>
+  
+</head>
+<body >
+     <div class="sliderContainer ">
+      <div class="slide"><a href="#"><img src="assets\Carousel\images\01.jpg"></a></div>
+      <div class="slide"><a href="#"><img src="assets\Carousel\images\02.jpg"></a></div>
+      <div class="slide"><a href="#"><img src="assets\Carousel\images\03.jpg"></a></div>
+      <div class="slide"><a href="#"><img src="assets\Carousel\images\04.jpg"></a></div>
+      <div class="slide"><a href="#"><img src="assets\Carousel\images\05.jpg"></a></div>
+      <div class="slide"><a href="#"><img src="assets\Carousel\images\06.jpg"></a></div>
+      <div class="slide"><a href="#"><img src="assets\Carousel\images\07.jpg"></a></div>
+      <div class="slide"><a href="#"><img src="assets\Carousel\images\08.jpg"></a></div>
+      <div class="slide"><a href="#"><img src="assets\Carousel\images\09.jpg"></a></div>    
+    </div>
+    <script>
+    $(document).ready(function(){
+      var slider=null;
+       slider=$('.sliderContainer').bxSlider({
+        
+        
+        slideWidth: 325,
+        minSlides: 3,
+        maxSlides: 3,
+        moveSlides: 1,
+        slideMargin: 10,
+        auto: true,
+        pause: 5000
+      });
+      $(".bx-pager").remove();
+      
+        var current=slider.getCurrentSlide();
+        var w=0;
+        w=Number.parseInt($("body").width());
+        if(w<800&&w>400)
+        {
+          slider.reloadSlider({
+            
+            
+            slideWidth: 325,
+            minSlides: 2,
+            maxSlides: 2,
+            moveSlides: 1,
+            slideMargin: 10,
+            auto: true,
+            pause: 5000
+          });
+        }
+        else if(w<400)
+        {
+          slider.reloadSlider({
+            
+            
+            slideWidth: 325,
+            minSlides: 1,
+            maxSlides: 1,
+            moveSlides: 1,
+            slideMargin: 10,
+            auto: true,
+            pause: 5000
+          });
+        }
+        else
+        {
+          slider.reloadSlider({
+            
+  
+            slideWidth: 325,
+            minSlides: 3,
+            maxSlides: 3,
+            moveSlides: 1,
+            slideMargin: 10,
+            auto: true,
+            pause: 5000
+          });          
+        }
+        slider.goToSlide(current);
+        $(".bx-pager").remove();
+      
+      
+      $(window).on('resize',function() {
+        var current=slider.getCurrentSlide();
+        var w=0;
+        w=Number.parseInt($('body').width());
+        if(w<800&&w>400)
+        {
+          slider.reloadSlider({
+            
+            
+            slideWidth: 325,
+            minSlides: 2,
+            maxSlides: 2,
+            moveSlides: 1,
+            slideMargin: 10,
+            auto: true,
+            pause: 5000
+          });
+        }
+        else if(w<400)
+        {
+          slider.reloadSlider({
+            
+            
+            slideWidth: 325,
+            minSlides: 1,
+            maxSlides: 1,
+            moveSlides: 1,
+            slideMargin: 10,
+            auto: true,
+            pause: 5000
+          });
+        }
+        else
+        {
+          slider.reloadSlider({
+            
+  
+            slideWidth: 325,
+            minSlides: 3,
+            maxSlides: 3,
+            moveSlides: 1,
+            slideMargin: 10,
+            auto: true,
+            pause: 5000
+          });          
+        }
+        slider.goToSlide(current);
+        $(".bx-pager").remove();
+      });
+      
+    });
+       
+  </script>
+</body>
+</html>
