@@ -1,0 +1,20 @@
+.slide-header .head
+{
+	font-size: 32pt;
+	color: orange;
+	text-align: center;
+	font-family: Forte;
+}
+.slide-header .tail
+{
+	font-size: 22pt;
+	color: brown;
+	text-align: center;
+	font-family: Forte;
+}
+.slider-wrap
+{
+	background-color: transparent;
+	border:1px solid orange;
+	
+}
