@@ -2,6 +2,7 @@ table
 {
 	border-collapse: collapse;
 	width: auto;
+	margin-top: 40px;
 }
 thead
 {
@@ -36,7 +37,7 @@ tbody tr td
 	padding: 20px;
 
 }
-span
+.star span
 {
 	color: orange;
 }
@@ -53,4 +54,45 @@ tbody tr td .price
 select
 {
 	width: 100px;
+}
+.remove
+{
+	padding-top:40px;
+}
+/* unvisited link */
+a:link {
+    color: orange;
+}
+
+/* visited link */
+a:visited {
+    color: orange;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: brown;
+}
+.additional
+{
+	margin: 20px;
+	padding: 20px 10px;
+}
+
+.change
+{
+	float: right;
+}
+.total
+{
+	float: right;
+}
+.subtotal tr td.totalresult
+{
+	color: orange;
 }
