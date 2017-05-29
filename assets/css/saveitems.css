@@ -1,0 +1,56 @@
+table
+{
+	border-collapse: collapse;
+	width: auto;
+}
+thead
+{
+	background-color: lightgray;
+}
+thead tr th
+{
+	text-align: center;
+}
+tbody tr td
+{
+	min-height: 200px;
+
+}
+.table-wrap
+{
+	overflow-x:auto;
+}
+.product
+{
+	vertical-align: middle;
+}
+.product img
+{
+	float: left;
+	width: 100px;
+	height: 120px;
+	display: inline-block;
+}
+.product .descript
+{
+	padding: 20px;
+
+}
+span
+{
+	color: orange;
+}
+tbody tr td .price
+{
+	text-align: center;
+	padding: 40px 0;
+}
+.qty
+{
+	padding-top:40px;
+	text-align: center;
+}
+select
+{
+	width: 100px;
+}
