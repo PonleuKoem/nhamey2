@@ -1,0 +1,628 @@
+
+body {
+    font-family: 'raleway', sans-serif;
+    font-size:13px;
+    color:#1c1c1c;
+    line-height:1.8em;
+    font-weight:400;
+    background:#ffffff;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center top;
+    -webkit-font-smoothing: antialiased;
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+    cursor:pointer;
+    color:#e9b947;
+}
+
+a:hover,a:focus,a:visited{
+    text-decoration:none;
+    outline:none;
+}
+
+h1 {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    font-family: "Playball",sans-serif;
+    font-weight: normal;
+    line-height: 1.6em;
+    margin: 0;
+    position: relative;
+    color: #e9b947;
+}
+
+h2,h3,h4,h5,h6 {
+    position:relative;
+    font-family: "raleway",sans-serif;
+    font-weight:normal;
+    margin:0px;
+    background:none;
+    line-height:1.6em;
+}
+
+input,button,select,textarea{
+    font-family: 'raleway', sans-serif;
+    font-weight:500;
+}
+
+p{
+    position:relative;
+    line-height:1.7em;
+}
+
+.auto-container{
+    position:static;
+    max-width:1200px;
+    padding:0px 15px;
+    margin:0 auto;
+}
+
+
+/***
+
+====================================================================
+	Page Title Style
+====================================================================
+
+***/
+
+.page-title{
+    position:relative;
+    padding:130px 0px 60px;
+    color:#ffffff;
+    background-color:#ffffff;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+
+.page-title:before{
+    content:'';
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    background:rgba(4,4,4,0.50);
+}
+
+.page-title .auto-container{
+    position:relative;
+    z-index:1;
+}
+
+
+.page-title h1 {
+    position: relative;
+    font-size: 32px;
+    line-height: 44px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/***
+
+====================================================================
+	Sidebar
+====================================================================
+
+***/
+
+.sidebar-page-container{
+    position:relative;
+    padding:120px 0px 90px;
+}
+
+.sidebar-page-container .sidebar,
+.sidebar-page-container .content-side{
+    margin-bottom:30px !important;
+}
+.sidebar .sidebar-widget{
+    position:relative;
+    margin-bottom:40px;
+}
+
+/* Tabbed Links*/
+.sidebar .tabbed-links{
+    position:relative;
+}
+
+.sidebar .tabbed-nav li{
+    position:relative;
+    margin-bottom:10px;
+}
+
+.sidebar .tabbed-nav li:last-child{
+    margin-bottom:0;
+}
+
+.sidebar .tabbed-nav li a{
+    position:relative;
+    display:block;
+    color:#1c1c1c;
+    text-transform:uppercase;
+    background:#f4f5f6;
+    font-size:13px;
+    font-weight:400;
+    line-height:24px;
+    padding:13px 15px;
+    padding-left:42px;
+    border-left:2px solid transparent;
+    border-radius:0px 2px 2px 0px;
+    transition:all 300ms ease-in;
+    -webkit-transition:all 300ms ease-in;
+    -ms-transition:all 300ms ease-in;
+    -o-transition:all 300ms ease-in;
+    -moz-transition:all 300ms ease-in;
+}
+
+.sidebar .tabbed-nav li a:before {
+    content: "\f178";
+    font-family: "FontAwesome";
+    font-size: 13px;
+    left: 15px;
+    top:50%;
+    margin-top:-12px;
+    width:20px;
+    line-height: 24px;
+    color:#e9b947;
+    position: absolute;
+}
+
+.sidebar .tabbed-nav li:hover a,
+.sidebar .tabbed-nav li.current a{
+    border-color:#e9b947;
+    color:#e9b947;
+}
+
+/* Contact Info Links*/
+.sidebar .contact-info li{
+    position:relative;
+    padding-left:35px;
+    margin-bottom:20px;
+    line-height:24px;
+    color:#1c1c1c;
+    font-size:13px;
+}
+
+.sidebar .contact-info li .icon{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    text-align:center;
+    line-height:24px;
+    font-size:18px;
+    color:#e9b947;
+}
+.sidebar-title{
+    position:relative;
+    margin-bottom:30px;
+    border-bottom:1px solid #f0f0f0;
+}
+
+/***
+
+====================================================================
+	About Us
+====================================================================
+
+***/
+
+.default-video-box{
+    position:relative;
+    margin-bottom:40px;
+}
+
+.default-video-box .image{
+    position:relative;
+    width:100%;
+}
+
+.default-video-box .image img{
+    display:block;
+    width:100%;
+}
+
+.default-video-box .overlay-link{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0);
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.default-video-box .overlay-link:hover{
+    background:rgba(0,0,0,0.50);
+}
+
+.default-video-box .overlay-link .icon{
+    position:absolute;
+    left:50%;
+    margin-left:-40px;
+    width:100px;
+    height:100px;
+    top:50%;
+    padding:30px;
+    margin-top:-50px;
+    line-height:36px;
+    border:2px solid #ffffff;
+    text-align:center;
+    color:#ffffff;
+    font-size:32px;
+    background:rgba(0,0,0,0);
+    border-radius:50%;
+}
+
+.content-section{
+    position:relative;
+    color:#5a5a5a;
+    line-height:2em;
+}
+
+.content-section .text-block{
+    position:relative;
+    padding-bottom:30px;
+    line-height:2em;
+}
+
+.content-section .text-block p{
+    margin-bottom:20px;
+    line-height:2em;
+}
+
+.two-column .text-column,
+.two-column .skills-column{
+    margin-bottom:20px;
+}
+
+.services-content .two-column{
+    position:relative;
+    margin-bottom:20px;
+}
+
+.services-content .two-column .text-column,
+.services-content .two-column .testimonial-column{
+    margin-bottom:40px;
+}
+
+.bigger-image{
+    position:relative;
+    margin-bottom:30px;
+    width:100%;
+}
+
+.bigger-image img{
+    display:block;
+    width:100%;
+}
+
+
+.normal-title{
+    position:relative;
+    margin-bottom:25px;
+}
+
+.normal-title h3{
+    font-size:16px;
+    font-weight:500;
+    text-transform:capitalize;
+    padding-bottom:10px;
+    color:#1c1c1c;
+    line-height:1.4em;
+}
+
+.normal-title h3:after{
+    content:'';
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    width:30px;
+    border-bottom:1px solid #e9b947;
+}
+
+/***
+
+/***
+
+====================================================================
+	Our History
+====================================================================
+
+***/
+
+.timeline-container{
+    position:relative;
+    overflow:hidden;
+}
+
+.timeline-container .timeline-block:before{
+    content:'';
+    position:absolute;
+    left:142px;
+    top:80%;
+    height:150%;
+    border-right:1px solid #e0e0e0;
+}
+
+.timeline-container .timeline-block:last-child:before{
+    margin-bottom:0px;
+}
+
+.timeline-container .timeline-block{
+    position:relative;
+    margin-bottom:100px;
+}
+
+.timeline-container .timeline-block:last-child{
+    margin-bottom:0px;
+}
+
+.timeline-container .timeline-block .inner-box{
+    position:relative;
+    padding-left:230px;
+    min-height:144px;
+    z-index:1;
+}
+
+.timeline-container .timeline-block .inner-box .left-info{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:200px;
+    padding-left:70px;
+}
+
+.timeline-container .timeline-block .date{
+    position:absolute;
+    left:0px;
+    top:50%;
+    margin-top:-15px;
+    line-height:30px;
+    color:#1c1c1c;
+    font-size:16px;
+    font-weight:500;
+}
+
+.timeline-container .timeline-block .timeline-image{
+    position:relative;
+    display:block;
+    width:144px;
+    height:144px;
+    border:1px solid #e0e0e0;
+}
+
+.timeline-container .timeline-block .timeline-image img{
+    display:block;
+    max-width:100%;
+    width:100%;
+    border:5px solid #ffffff;
+}
+
+.timeline-container .timeline-block h4{
+    font-size:16px;
+    font-weight:500;
+    text-transform:uppercase;
+    margin-bottom:5px;
+    color:#1c1c1c;
+}
+
+.timeline-container .timeline-block .text-content{
+    position:relative;
+    line-height:2em;
+    padding-top:20px;
+}
+
+/***
+
+
+/***
+
+====================================================================
+	Team Style One
+====================================================================
+
+***/
+
+.team-section{
+    position:relative;
+    padding:100px 0px 0px;
+}
+
+.team-section .sec-title h1 {
+    color: #e9b947;
+    font-family: "Playball",sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 40px;
+}
+
+.team-section .sec-title p {
+    color: #999;
+    font-family: "raleway",sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.team-member{
+    position:relative;
+}
+
+.content-section .team-member{
+    margin-bottom:30px;
+}
+
+.team-member .inner-box .overlay-box{
+    position:absolute !important;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    opacity:0;
+    background:rgba(0,0,0,0.8);
+    transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -ms-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+}
+
+.team-member .inner-box:hover .overlay-box{
+    opacity:1;
+}
+
+.style-two .team-member .inner-box:hover .overlay-box{
+    background:rgba(6,6,6,0);
+}
+
+.team-member .inner-box .overlay-box .inner{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    display:table;
+    vertical-align:middle;
+}
+
+.team-member .inner-box .overlay-box .inner .content{
+    position:relative;
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.team-member .inner-box .overlay-box .data{
+    position:relative;
+    margin:20px 40px;
+    padding:30px;
+    color:#ffffff;
+}
+
+.style-two .team-member .inner-box .overlay-box .data{
+    border:1px solid rgba(255,255,255,0.0);
+    padding:35px 30px 30px;
+    background:rgba(11,11,11,0.75);
+}
+
+.content-section .team-member .inner-box .overlay-box .data{
+    padding:20px 15px;
+    margin:10px 20px;
+}
+
+.team-member .inner-box .overlay-box .info{
+    position:relative;
+    padding-top:18px;
+    padding-left: 40px;
+    float:left;
+}
+
+.team-member .inner-box .overlay-box h3{
+    font-size:18px;
+    font-weight:500;
+    font-weight: 600;
+    color:#ffffff;
+    line-height:24px;
+    margin-bottom:5px;
+}
+
+.team-member .inner-box
+.overlay-box .designation {
+    color: #e9b947;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #e9b947;
+    padding: 2px 10px;
+    position: relative;
+}
+
+.team-member .inner-box .overlay-box .social-info{
+    float:right;
+    width:32px;
+}
+
+.team-member .inner-box .overlay-box .social-info a{
+    position:relative;
+    display:block;
+    line-height:20px;
+    height:20px;
+    font-size:12px;
+    color:#ffffff;
+    margin:7px 0px;
+    text-align:center;
+    border:1px solid transparent;
+    border-top:none;
+    border-bottom:none;
+    transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -webkit-transition:all 0.3s ease;
+    -ms-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+}
+
+.team-member .inner-box .overlay-box .social-info a:hover{
+    color:#e9b947;
+    border-left-color:#e9b947;
+    border-right-color:#e9b947;
+}
+
+.team-carousel .owl-controls{
+    margin:0px !important;
+}
+
+.team-carousel .owl-controls .owl-dots{
+    display:none !important;
+}
+
+.team-carousel .owl-controls .owl-nav{
+    margin:0px !important;
+    position:absolute;
+    right:0px;
+    top:-100px;
+}
+
+.team-carousel .owl-controls .owl-nav .owl-prev,
+.team-carousel .owl-controls .owl-nav .owl-next {
+    background: none;
+    border: 1px solid #e9b947 !important;
+    border-radius: 0 !important;
+    color: #e9b947 !important;
+    display: inline-block;
+    font-size: 15px !important;
+    height: 38px !important;
+    line-height: 36px !important;
+    margin: 0 0 0 15px !important;
+    padding: 0 !important;
+    position: relative;
+    text-align: center !important;
+    width: 38px !important;
+}
+
+.team-carousel .owl-controls .owl-nav .owl-prev:hover,
+.team-carousel .owl-controls .owl-nav .owl-next:hover{
+    color:#ffffff !important;
+    background-color:#e9b947;
+    border-color:#e9b947 !important;
+}
+.icon {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 20px;
+    text-align: center;
+    line-height: 24px;
+    padding: 0;
+}
