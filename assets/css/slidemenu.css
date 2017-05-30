@@ -1,13 +1,13 @@
 .slide-header .head
 {
-	font-size: 32pt;
+	font-size: 26pt;
 	color: orange;
 	text-align: center;
 	font-family: Forte;
 }
 .slide-header .tail
 {
-	font-size: 22pt;
+	font-size: 18pt;
 	color: brown;
 	text-align: center;
 	font-family: Forte;
@@ -17,4 +17,8 @@
 	background-color: transparent;/*
 	border:1px solid orange;*/
 	
+}
+.bx-wrapper
+{
+	min-width: 100%;
 }
