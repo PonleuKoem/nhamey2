@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Contact Us</title>
+  <link rel="icon" type="image/png" href="assets/images/icon.png">
   <script type="text/javascript" src="assets/jq/jquery-3.2.1.js"></script>
   <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
   <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap.css">
@@ -12,18 +13,12 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/menu.css">
 
-  <link rel="stylesheet" href="assets/css/stylelogin.css">
-  <script src="assets/js/scriptlogin.js"></script>
-
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="assets/wowslider/engine1/style.css" />
-  <script type="text/javascript" src="assets/wowslider/engine1/jquery.js"></script>
   <script type="text/javascript" src="assets/js/menu.js"></script>
   
 
   <!--footer-->
-   <link rel="stylesheet" href="assets/css/footer.css"> 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="assets/css/footer.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!--end of footer-->
   <style>
@@ -168,16 +163,19 @@
                     <div class="col-md-12">
                       <form action="">
                         <div class="form-c">
-                          <input type="text" class="form-control-c" placeholder="Name *">
+                          <input type="text" class="form-control-c" placeholder="Name *" required="required">
                         </div>
                         <div class="form-c">
-                          <input type="text" class="form-control-c" placeholder="Email *">
+                          <input type="text" class="form-control-c" placeholder="Email *" required="required">
                         </div>
                         <div class="form-c">
-                          <input type="text" class="form-control-c" placeholder="Subject *">
+                          <input type="text" class="form-control-c" placeholder="Subject *" required="required">
                         </div>
                         <div class="form-c">
-                          <textarea name="" id="" cols="30" rows="7" class="form-control-c" placeholder="Message *"></textarea>
+                          <textarea name="" id="" cols="30" rows="7" class="form-control-c" placeholder="Message *" required="required"></textarea>
+                        </div>
+                        <div class="form-c pull-right">
+                          <input type="submit" class="btn btn-warning" value="CONTACT" required="required">
                         </div>
                       </form>
                     </div>                    

@@ -266,3 +266,15 @@ body{
 {
   color: #000;
 }
+@media (max-width: 720px) {
+  .text-banner {
+    position: absolute;
+    bottom: 0;
+    color: #ff8f00;
+    text-shadow: 2px 2px #fff;
+    left: 0;
+    font-size: 15px;
+}
+.restuarant-menu{
+  padding: 0;
+}
