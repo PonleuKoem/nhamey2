@@ -254,3 +254,10 @@ body{
   color: #ff8f00;
   text-shadow: 1px 1px #ff0000;
 }
+.form-control-c{
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+  border: 1px #a04d04 solid;
+  border-width: 1px;
+}
