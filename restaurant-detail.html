@@ -5,22 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Restaurants Details</title>
+  <!--footer-->
+   <link rel="stylesheet" href="assets/css/footer.css">
+  <!--end of footer-->  
+  <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/menu.css">
   <link rel="icon" type="image/png" href="assets/images/icon.png">
   <script type="text/javascript" src="assets/jq/jquery-3.2.1.js"></script>
   <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-  <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/js/bootstrap.js">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/menu.css">
 
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <script type="text/javascript" src="assets/js/menu.js"></script>
   
-
-  <!--footer-->
-   <link rel="stylesheet" href="assets/css/footer.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!--end of footer-->
   <style>
   /* Note: Try to remove the following lines to see the effect of CSS positioning */
   .affix {
@@ -73,7 +70,8 @@
           </div>
         </div>
       </div>
-      <div class="clearfix"></div>
+      
+      <!-- Menu -->
       <div class="">
         <div class="col-md-12 nav-m navbar navbar-inverse  nav-m" data-spy="affix" data-offset-top="107">
           <nav class="navbar navbar-btn nav-c" style="">
@@ -85,41 +83,8 @@
             <div class="collapse navbar-collapse js-navbar-collapse">
               <ul class="nav navbar-nav">
                 <li><a href="index.html">HOME</a></li>
-                <li class="dropdown mega-dropdown">
-                  <a href="products.html" class="" data-toggle="">MENU<span class=""></span></a>        
-                  <!-- <ul class="dropdown-menu mega-dropdown-menu">
-                    <li class="col-sm-3">
-                        <ul>
-                        <li class="dropdown-header">Features</li>
-                        <li><a href="#">Auto Carousel</a></li>
-                                      <li><a href="#">Carousel Control</a></li>
-                                      <li><a href="#">Left & Right Navigation</a></li>
-                        <li><a href="#">Four Columns Grid</a></li>
-                        <li class="divider"></li>
-                        <li class="dropdown-header">Fonts</li>
-                                      <li><a href="#">Glyphicon</a></li>
-                        <li><a href="#">Google Fonts</a></li>
-                      </ul>
-                    </li>
-                    <li class="col-sm-3">
-                      <ul>
-                        <li class="dropdown-header">Plus</li>
-                        <li><a href="#">Navbar Inverse</a></li>
-                        <li><a href="#">Pull Right Elements</a></li>
-                        <li><a href="#">Coloured Headers</a></li>                            
-                        <li><a href="#">Primary Buttons & Default</a></li>              
-                      </ul>
-                    </li>
-                    <li class="col-sm-3">
-                      <ul>
-                        <li class="dropdown-header">Much more</li>
-                                      <li><a href="#">Easy to Customize</a></li>
-                        <li><a href="#">Calls to action</a></li>
-                        <li><a href="#">Custom Fonts</a></li>
-                        <li><a href="#">Slide down on Hover</a></li>                         
-                      </ul>
-                    </li>
-                  </ul>   -->     
+                <li class="">
+                  <a href="products.html" class="" data-toggle="">MENU<span class=""></span></a>   
                 </li>
                 <li><a href="restaurants.html">RESTUARANTS</a></li>
                 <li><a href="videos.html">VIDEOS</a></li>
@@ -152,8 +117,6 @@
     </div>
     <!-- Start your content here -->
     <div class="col-md-12 main-body">
-        
-
       <!-- ++++++++++++++++++++Where you write your code++++++++++++++++++++++++ -->
         <div class="col-md-12 restuarant-detail container">
           <div class="col-md-12 text-center text-danger title-2">
@@ -652,83 +615,80 @@
             </div>
           </div>
         </div>
-
     </div>
     <!-- End your content here -->
-  </div>
+    <script>
+          $(document).ready(function(){
+            $(".dropdown").hover(
+                function() {
+                    $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+                    $(this).toggleClass('open');
+                },
+                function() {
+                    $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+                    $(this).toggleClass('open');
+                }
+            );
 
-  <script>
-        $(document).ready(function(){
-          $(".dropdown").hover(
-              function() {
-                  $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
-                  $(this).toggleClass('open');
-              },
-              function() {
-                  $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
-                  $(this).toggleClass('open');
-              }
-          );
-
-            $(".filter-button").click(function(){
+              $(".filter-button").click(function(){
+                  var value = $(this).attr('data-filter');
+                  
+                  if(value == "all")
+                  {
+                      //$('.filter').removeClass('hidden');
+                      $('.filter').show('1000');
+                  }
+                  else
+                  {
+                      //$('.filter[filter-item="'+value+'"]').removeClass('hidden');
+                     //$(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                      $(".filter").not('.'+value).hide('3000');
+                      $('.filter').filter('.'+value).show('3000');
+                      
+                  }
+              });
+              $(".cate-menu").click(function(){
                 var value = $(this).attr('data-filter');
-                
-                if(value == "all")
-                {
-                    //$('.filter').removeClass('hidden');
-                    $('.filter').show('1000');
+                  
+                  if(value == "all")
+                  {
+                      //$('.filter').removeClass('hidden');
+                      $('.filter-menu').show('1000');
+                  }
+                  else
+                  {
+          //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+          //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+
+                      $(".filter-menu").not('.'+value).hide('3000');
+                      $('.filter-menu').filter('.'+value).show('3000');
+                      
+                  }
+              });
+              var btncl = $(".filter-button");
+              btncl.click(function(){
+                if ($(this).hasClass('btn-default')) {
+                      btncl.css("background","#f4f5f6");                    
+                      $(this).css("background", "#ff8f00");
+                  // $('button#filter-button').removeClass('btn-default');
+                  // $(this).addClass('btn-primary');
+
+                }else{
                 }
-                else
-                {
-                    //$('.filter[filter-item="'+value+'"]').removeClass('hidden');
-                   //$(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-                    $(".filter").not('.'+value).hide('3000');
-                    $('.filter').filter('.'+value).show('3000');
-                    
-                }
-            });
-            $(".cate-menu").click(function(){
-              var value = $(this).attr('data-filter');
-                
-                if(value == "all")
-                {
-                    //$('.filter').removeClass('hidden');
-                    $('.filter-menu').show('1000');
-                }
-                else
-                {
-        //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-        //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
 
-                    $(".filter-menu").not('.'+value).hide('3000');
-                    $('.filter-menu').filter('.'+value).show('3000');
-                    
-                }
-            });
-            var btncl = $(".filter-button");
-            btncl.click(function(){
-              if ($(this).hasClass('btn-default')) {
-                    btncl.css("background","#f4f5f6");                    
-                    $(this).css("background", "#ff8f00");
-                // $('button#filter-button').removeClass('btn-default');
-                // $(this).addClass('btn-primary');
+              });
+              var categcl = $(".cate-menu");
+              categcl.click(function(){
+                      categcl.css("background","#f4f5f6");                    
+                      $(this).css("background", "#ff8f00");
+                  // $('button#filter-button').removeClass('btn-default');
+                  // $(this).addClass('btn-primary');
 
-              }else{
-              }
+              });
+        });
 
-            });
-            var categcl = $(".cate-menu");
-            categcl.click(function(){
-                    categcl.css("background","#f4f5f6");                    
-                    $(this).css("background", "#ff8f00");
-                // $('button#filter-button').removeClass('btn-default');
-                // $(this).addClass('btn-primary');
-
-            });
-      });
-
-</script>
-  <!--start the footer-->
+    </script>
+    <!--start the footer-->
     <div class="footer col-md-12 col-xs-12 col-sm-12 col-lg-12">
       <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1"></div>
       <div class="footer_contian col-md-10 col-xs-10 col-sm-10 col-lg-10">
@@ -783,15 +743,10 @@
     <div class="footer_under col-md-12 col-xs-12 col-sm-12 col-lg-12">
       <span class="footer_under_copy">Copyright @ All Rights Reserved  </span><span class="footer_under_food">HRD Group 1</span>
     </div>
-    </div>
     
   </div>
-  <!--End of menu slide-->
   <script>
-
         $(document).ready(function(){
-
-
           $(".dropdown").hover(
               function() {
                   $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
