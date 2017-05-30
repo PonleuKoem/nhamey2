@@ -14,15 +14,15 @@
   <link rel="stylesheet" href="assets/css/menu.css">
   <script type="text/javascript" src="assets/js/menu.js"></script>
   
-  <!--Start Save Item-->
+  <!--Start Save Item Style-->
   <link rel="stylesheet" href="assets/css/saveitems.css">
-  <!--Stop Save Item-->
+  <!--Stop Save Item Style-->
   
 
   <!--footer-->
    <link rel="stylesheet" href="assets/css/footer.css"> 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
   <!--end of footer-->
   <style>
   /* Note: Try to remove the following lines to see the effect of CSS positioning */
@@ -90,39 +90,6 @@
                 <li><a href="index.html">HOME</a></li>
                 <li class="dropdown mega-dropdown">
                   <a href="products.html" class="" data-toggle="">MENU<span class=""></span></a>        
-                  <!-- <ul class="dropdown-menu mega-dropdown-menu">
-                    <li class="col-sm-3">
-                        <ul>
-                        <li class="dropdown-header">Features</li>
-                        <li><a href="#">Auto Carousel</a></li>
-                                      <li><a href="#">Carousel Control</a></li>
-                                      <li><a href="#">Left & Right Navigation</a></li>
-                        <li><a href="#">Four Columns Grid</a></li>
-                        <li class="divider"></li>
-                        <li class="dropdown-header">Fonts</li>
-                                      <li><a href="#">Glyphicon</a></li>
-                        <li><a href="#">Google Fonts</a></li>
-                      </ul>
-                    </li>
-                    <li class="col-sm-3">
-                      <ul>
-                        <li class="dropdown-header">Plus</li>
-                        <li><a href="#">Navbar Inverse</a></li>
-                        <li><a href="#">Pull Right Elements</a></li>
-                        <li><a href="#">Coloured Headers</a></li>                            
-                        <li><a href="#">Primary Buttons & Default</a></li>              
-                      </ul>
-                    </li>
-                    <li class="col-sm-3">
-                      <ul>
-                        <li class="dropdown-header">Much more</li>
-                                      <li><a href="#">Easy to Customize</a></li>
-                        <li><a href="#">Calls to action</a></li>
-                        <li><a href="#">Custom Fonts</a></li>
-                        <li><a href="#">Slide down on Hover</a></li>                         
-                      </ul>
-                    </li>
-                  </ul>   -->     
                 </li>
                 <li><a href="restaurants.html">RESTUARANTS</a></li>
                 <li><a href="videos.html">VIDEOS</a></li>
@@ -156,113 +123,99 @@
     <!-- Start your content here -->
     <div class="col-md-12 main-body">
 
-    <div class="col-md-12 table-wrap">
-      <!--Begin Shopping part-->
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th style="min-width: 250px">Product</th>
-            <th style="min-width: 200px">Price</th>
-            <th style="min-width: 150px">Quantity</th>
-            <th style="min-width: 150px">Total</th>
-            <th style="min-width: 150px"> <span class="glyphicon glyphicon-trash"></span></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div class="product">
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                  <img src="assets\Carousel\images\06.jpg" alt="product01">
-                </div>
-                <div class="descript col-md-6 col-sm-6 col-xs-12">
-                  <p>Pizza Chicken Flavour</p>
-                  <div class="star">
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star-empty"></span>
-                    <span class="glyphicon glyphicon-star-empty"></span>
-                  </div>
-                </div>
-              </div>
-            </td>
-            <td>
-              <p class="price">$15.00</p>
-            </td>
-            <td>
-              <div class="qty">
-                <select name="proqty" id="proqty">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-              </div>
-            </td>
-            <td>
-              <p class="price">$15.00</p>
-            </td>
-            <td style="text-align: center">
-              <a href="#"><span class="glyphicon glyphicon-remove remove"></span></a>
-            </td>
-          </tr>
-        </tbody>
-        
-      </table>
+	    <div class="col-md-12 table-wrap">
+	      <table class="table table-hover">
+	      <!--Set table style to Table-Hover Style in Bootstrap-->
+	        <thead>
+	          <tr>
+	          <!--Table Header-->
+	            <th style="min-width: 250px">Product</th>
+	            <th style="min-width: 200px">Price</th>
+	            <th style="min-width: 150px">Quantity</th>
+	            <th style="min-width: 150px">Total</th>
+	            <th style="min-width: 150px"> <span class="glyphicon glyphicon-trash"></span></th>
+	          </tr>
+	        </thead>
+	        <tbody>
+	          <tr>
+	            <td>
+	              <div class="product">
+	                <div class="col-md-6 col-sm-6 col-xs-12">
+	                  <img src="assets\Carousel\images\06.jpg" alt="product01">
+	                </div>
+	                <div class="descript col-md-6 col-sm-6 col-xs-12">
+	                  <p>Pizza Chicken Flavour</p>
+	                  <!-- making Start of rating -->
+	                  <div class="star">
+	                    <span class="glyphicon glyphicon-star"></span>
+	                    <span class="glyphicon glyphicon-star"></span>
+	                    <span class="glyphicon glyphicon-star"></span>
+	                    <span class="glyphicon glyphicon-star-empty"></span>
+	                    <span class="glyphicon glyphicon-star-empty"></span>
+	                  </div>
+	                </div>
+	              </div>
+	            </td>
+	            <td>
+	              <p class="price">$15.00</p>
+	            </td>
+	            <td>
+	              <div class="qty">
+	                <select name="proqty" id="proqty">
+	                  <option value="0">0</option>
+	                  <option value="1">1</option>
+	                  <option value="2">2</option>
+	                  <option value="3">3</option>
+	                  <option value="4">4</option>
+	                  <option value="5">5</option>
+	                </select>
+	              </div>
+	            </td>
+	            <td>
+	              <p class="price">$15.00</p>
+	            </td>
+	            <td style="text-align: center">
+	              <a href="#"><span class="glyphicon glyphicon-remove remove"></span></a>
+	            </td>
+	          </tr>
+	        </tbody>
+	        
+	      </table>
+	    </div>
+	    <div class="additional col-md-12 col-sm-12 col-xs-12">
+	      <input type="text" class="input-lg col-md-4 col-sm-4 col-xs-12" placeholder="Input your coupon code">
+	      <div class="btn btn-warning btn-lg apply col-sm-4 col-md-4 col-xs-12">Apply Coupon</div>
+	      <div class="btn btn-warning btn-lg change col-sm-2 col-md-2 col-xs-12">Update Cart</div>
+	    </div>
+	    <div class="total col-md-5 col-sm-8 col-xs-12">
+	      <table class="table table-hover subtotal">
+	        <thead>
+	          <tr>
+	            <th colspan="2">Cart Total</th>
+	          </tr>
+	        </thead>
+	        <tbody>
+	          <tr>
+	            <td>Subtotal</td>
+	            <td>$ 15.00</td>
+	          </tr>
+	          <tr>
+	            <td class="totalresult">Order Total</td>
+	            <td class="totalresult">$ 15.00</td>
+	          </tr>
+	          <tr>
+	            <td colspan="2">
+	              <div class="btn btn-warning col-sm-12 col-md-12 col-xs-12">Procceed to Check</div>              
+	            </td>
+	          </tr>
+	        </tbody>
+	      </table>
+	    </div>
     </div>
-    <div class="additional col-md-12 col-sm-12 col-xs-12">
-      <input type="text" class="input-lg col-md-4 col-sm-4 col-xs-12" placeholder="Input your coupon code">
-      <div class="btn btn-warning btn-lg apply col-sm-4 col-md-4 col-xs-12">Apply Coupon</div>
-      <div class="btn btn-warning btn-lg change col-sm-2 col-md-2 col-xs-12">Update Cart</div>
-    </div>
-    <div class="total col-md-5 col-sm-8 col-xs-12">
-      <table class="table table-hover subtotal">
-        <thead>
-          <tr>
-            <th colspan="2">Cart Total</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Subtotal</td>
-            <td>$ 15.00</td>
-          </tr>
-          <tr>
-            <td class="totalresult">Order Total</td>
-            <td class="totalresult">$ 15.00</td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <div class="btn btn-warning col-sm-12 col-md-12 col-xs-12">Procceed to Check</div>              
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    </div>
-    <!-- End your content here -->
   </div>
 
   <script>
-  //  $(document).ready(function(){
-  //    $(window).bind('scroll', function() {
-  //    var navHeight = $( window ).height() - 300;
-  //     if ($(window).scrollTop() > navHeight) {
-  //       $('.menu').addClass("fixed");
-  //     }
-  //     else {
-  //       $('.menu').removeClass("fixed");
-  //     }
-  //  });
-  //     $('.navbar-dropdown').hover(function() {
-  //       $('.dropdown-menu').slideToggle(300).css("position", "absolute", "top", "10px");
-  //       return false;
-  //     });
-  // });
+  
         $(document).ready(function(){
           $(".dropdown").hover(
               function() {
@@ -280,13 +233,11 @@
                 
                 if(value == "all")
                 {
-                    //$('.filter').removeClass('hidden');
                     $('.filter').show('1000');
                 }
                 else
                 {
-                    //$('.filter[filter-item="'+value+'"]').removeClass('hidden');
-                   //$(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                  
                     $(".filter").not('.'+value).hide('3000');
                     $('.filter').filter('.'+value).show('3000');
                     
@@ -297,13 +248,12 @@
                 
                 if(value == "all")
                 {
-                    //$('.filter').removeClass('hidden');
+                  
                     $('.filter-menu').show('1000');
                 }
                 else
                 {
-        //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-        //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+       
 
                     $(".filter-menu").not('.'+value).hide('3000');
                     $('.filter-menu').filter('.'+value).show('3000');
@@ -315,8 +265,7 @@
               if ($(this).hasClass('btn-default')) {
                     btncl.css("background","#f4f5f6");                    
                     $(this).css("background", "#ff8f00");
-                // $('button#filter-button').removeClass('btn-default');
-                // $(this).addClass('btn-primary');
+                
 
               }else{
               }
@@ -326,8 +275,6 @@
             categcl.click(function(){
                     categcl.css("background","#f4f5f6");                    
                     $(this).css("background", "#ff8f00");
-                // $('button#filter-button').removeClass('btn-default');
-                // $(this).addClass('btn-primary');
 
             });
       });
@@ -348,6 +295,7 @@
         <div class="footer_contian_2 col-md-6 col-xs-12 col-sm-6 col-lg-3"><br>
           <span class="footer_contian_2_style">SERVICES</span>
           <ul>
+          <!-- put the link to other page -->
             <a href="products.html"><li>>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMENU </li></a>
             <a href="restaurants.html"><li>>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRestaurants</li></a>
             <a href="products.html"><li>>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMenu Section</li></a>
