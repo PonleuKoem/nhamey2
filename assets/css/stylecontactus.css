@@ -1,0 +1,83 @@
+
+
+.container {
+  width: 600px;
+  margin: 2em auto;
+  overflow: hidden;
+  background: white;
+  border-radius: 5px;
+  background-color: darkred;
+}
+
+.message, .contact, .name, .footer, .areatext {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  clear: both;
+  overflow: hidden;
+}
+
+
+ .titl {
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.first, .last {
+  float: left;
+  width: 278px;
+  margin: 0;
+  padding: 0 0 0 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 50px;
+}
+
+.last {
+  width: 279px;
+  border-left: 0;
+}
+
+.email, .areatext {
+  height: 50px;
+  width: 578px;
+  line-height: 50px;
+  padding: 0 0 0 20px;
+  border-top: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.areatext {
+  height: 200px;
+}
+
+
+.butt {
+  height: 32px;
+  background: #e74c3c;
+  border-radius: 5px;
+  border: 0;
+  margin: 7px 0;
+  color: white;
+  margin-right: 10px;
+  float: right;
+  padding: 0 20px 0 20px;
+  border-bottom: 3px solid #c0392b;
+  transition: all linear .2s;
+}
+ .butt:hover {
+  background: #c0392b;
+}
+ .butt:focus {
+  outline: none;
+}
+
+.first:focus, .last:focus, .email:focus, textarea:focus, textarea:focus {
+  outline: none;
+  background: rgba(52, 152, 219, 0.1);
+  color: rgba(51, 51, 51, 0.7);
+}
