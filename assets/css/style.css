@@ -252,7 +252,8 @@ body{
   position: absolute;
   bottom: 50px;
   color: #ff8f00;
-  text-shadow: 1px 1px #ff0000;
+  text-shadow: 2px 2px #fff;
+  left: 50%;
 }
 .form-control-c{
   padding: 10px;
@@ -260,4 +261,8 @@ body{
   width: 100%;
   border: 1px #a04d04 solid;
   border-width: 1px;
+}
+.text-banner> h1
+{
+  color: #000;
 }
