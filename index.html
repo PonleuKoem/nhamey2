@@ -26,6 +26,19 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!--end of footer-->
+  <style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+    top: 0;
+    width: 100%;
+    z-index:110;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+
+  </style>
 </head>
 <body>
   <div class="body">   
@@ -33,9 +46,9 @@
     <div class="main-header">
       <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 text-center header">
         <div class="col-md-4 col-sm-12 col-xs-12 header-h">
-          <img src="assets/images/logo.png" alt="" width="200">
+          <a href="index.html"></a><img src="assets/images/logo.png" alt="" width="200">
         </div>
-        <div class="col-md-8 col-sm-12 col-xs-12 header-h">
+        <div class="col-md-8 col-sm-12 col-xs-12 header-h hidden-sm hidden-xs">
           <div class="col-md-4 vert-head ">
             <div class="col-md-3">
                 <span class="fa fa-clock-o fa-3x fav-me text-gold"></span>
@@ -66,75 +79,73 @@
         </div>
       </div>
       <div class="clearfix"></div>
-      <div class="col-md-12 nav-m">
-        <nav class="navbar navbar-btn nav-c" style="">
-          <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        
-        <div class="collapse navbar-collapse js-navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#">HOME</a></li>
-            <li class="dropdown mega-dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">MENU<span class="caret"></span></a>        
-              <ul class="dropdown-menu mega-dropdown-menu">
-                <li class="col-sm-3">
-                    <ul>
-                    <li class="dropdown-header">Features</li>
-                    <li><a href="#">Auto Carousel</a></li>
-                                  <li><a href="#">Carousel Control</a></li>
-                                  <li><a href="#">Left & Right Navigation</a></li>
-                    <li><a href="#">Four Columns Grid</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Fonts</li>
-                                  <li><a href="#">Glyphicon</a></li>
-                    <li><a href="#">Google Fonts</a></li>
-                  </ul>
+      <div class="">
+        <div class="col-md-12 nav-m navbar navbar-inverse  nav-m" data-spy="affix" data-offset-top="107">
+          <nav class="navbar navbar-btn nav-c" style="">
+            <div class="navbar-header">
+              <button class="navbar-toggle fa fa-bars hidden-md hidden-lg hidden-sm" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+              </button>
+            </div>
+          
+            <div class="collapse navbar-collapse js-navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown mega-dropdown">
+                  <a href="products.html" class="dropdown-toggle" data-toggle="dropdown">MENU<span class="caret"></span></a>        
+                  <ul class="dropdown-menu mega-dropdown-menu">
+                    <li class="col-sm-3">
+                        <ul>
+                        <li class="dropdown-header">Features</li>
+                        <li><a href="#">Auto Carousel</a></li>
+                                      <li><a href="#">Carousel Control</a></li>
+                                      <li><a href="#">Left & Right Navigation</a></li>
+                        <li><a href="#">Four Columns Grid</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Fonts</li>
+                                      <li><a href="#">Glyphicon</a></li>
+                        <li><a href="#">Google Fonts</a></li>
+                      </ul>
+                    </li>
+                    <li class="col-sm-3">
+                      <ul>
+                        <li class="dropdown-header">Plus</li>
+                        <li><a href="#">Navbar Inverse</a></li>
+                        <li><a href="#">Pull Right Elements</a></li>
+                        <li><a href="#">Coloured Headers</a></li>                            
+                        <li><a href="#">Primary Buttons & Default</a></li>              
+                      </ul>
+                    </li>
+                    <li class="col-sm-3">
+                      <ul>
+                        <li class="dropdown-header">Much more</li>
+                                      <li><a href="#">Easy to Customize</a></li>
+                        <li><a href="#">Calls to action</a></li>
+                        <li><a href="#">Custom Fonts</a></li>
+                        <li><a href="#">Slide down on Hover</a></li>                         
+                      </ul>
+                    </li>
+                  </ul>       
                 </li>
-                <li class="col-sm-3">
-                  <ul>
-                    <li class="dropdown-header">Plus</li>
-                    <li><a href="#">Navbar Inverse</a></li>
-                    <li><a href="#">Pull Right Elements</a></li>
-                    <li><a href="#">Coloured Headers</a></li>                            
-                    <li><a href="#">Primary Buttons & Default</a></li>              
-                  </ul>
-                </li>
-                <li class="col-sm-3">
-                  <ul>
-                    <li class="dropdown-header">Much more</li>
-                                  <li><a href="#">Easy to Customize</a></li>
-                    <li><a href="#">Calls to action</a></li>
-                    <li><a href="#">Custom Fonts</a></li>
-                    <li><a href="#">Slide down on Hover</a></li>                         
-                  </ul>
-                </li>
-              </ul>       
-            </li>
-            <li><a href="#">RESTUARANTS</a></li>
-            <li><a href="#">VIDEOS</a></li>
-            <li><a href="#">CONTACT US</a></li>
-            <li><a href="#">ABOUT US</a></li>
-          </ul>
-              <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My account <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">SIGN IN</a></li>
-                  <li><a href="#">SIGN UP</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">LOG OUT</a></li>
+                <li><a href="restaurant-detail.html">RESTUARANTS</a></li>
+                <li><a href="videos.html">VIDEOS</a></li>
+                <li><a href="contact-us.html">CONTACT US</a></li>
+                <li><a href="about-us.html">ABOUT US</a></li>
+              </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My account <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="login.html">SIGN IN</a></li>
+                      <li><a href="login.html">SIGN UP</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">LOG OUT</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="saved-items.html">Saved (0) items</a></li>
                 </ul>
-              </li>
-              <li><a href="#">Saved (0) items</a></li>
-            </ul>
-        </div><!-- /.nav-collapse -->
-        </nav>
+            </div><!-- /.nav-collapse -->
+          </nav>
+        </div>
       </div>
       <div class="wowslider-content">
         <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
@@ -211,96 +222,13 @@
       
         
       </div>
+      <div class="">
+      </div>
       
 
     </div>
-
-
     <!-- End your content here -->
   </div>
-
-<div class="form">
-      
-      <ul class="tab-group">
-        <li class="tab active"><a href="#signup">Sign Up</a></li>
-        <li class="tab"><a href="#login">Log In</a></li>
-      </ul>
-      
-      <div class="tab-content">
-        <div id="signup">   
-          <h1 class="til">Sign up to get in touch with us!!!!</h1>
-          
-          <form action="/" method="post">
-          
-          <div class="top-row">
-            <div class="field-wrap">
-              <label class="fform">
-                First Name<span class="req">*</span>
-              </label>
-              <input type="text" class="inp" required autocomplete="off" />
-            </div>
-        
-            <div class="field-wrap">
-              <label class="fform">
-                Last Name<span class="req">*</span>
-              </label>
-              <input type="text"required autocomplete="off" class="inp" />
-            </div>
-          </div>
-
-          <div class="field-wrap">
-            <label class="fform">
-              Email Address<span class="req">*</span>
-            </label>
-            <input type="email"required autocomplete="off" class="inp" />
-          </div>
-          
-          <div class="field-wrap">
-            <label class="fform">
-            Password<span class="req">*</span>
-            </label>
-            <input type="password"required autocomplete="off" class="inp" />
-          </div>
-          
-          <button type="submit" class="button button-block"/>OK</button>
-          
-          </form>
-
-        </div>
-        
-        <div id="login">   
-          <h1 class="til">Welcome Back!</h1>
-          
-          <form action="/" method="post">
-          
-            <div class="field-wrap">
-            <label class="fform">
-              Email Address<span class="req">*</span>
-            </label>
-            <input type="email"required autocomplete="off" class="inp" />
-          </div>
-          
-          <div class="field-wrap">
-            <label class="fform">
-              Password<span class="req">*</span>
-            </label>
-            <input type="password"required autocomplete="off" class="inp" />
-          </div>
-          
-          <p class="forgot"><a href="#">Forgot Password?</a></p>
-          
-          <button class="button button-block"/>Log In</button>
-          
-          </form>
-
-        </div>
-        
-      </div><!-- tab-content -->
-      
-</div> <!-- /form -->
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-    <script src="assets/js/scriptlogin.js"></script>
 
   <div>
   <!--start the footer-->
@@ -318,12 +246,11 @@
         <div class="footer_contian_2 col-md-6 col-xs-12 col-sm-6 col-lg-3"><br>
           <span class="footer_contian_2_style">SERVICES</span>
           <ul>
-            <a><li>>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOnline Shop</li></a>
-            <li>>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspShop Details</li>
-            <li>>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspShopping Cart</li>
-            <li>>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspReservation </li>
-            <li>>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNews</li>
-            <li>>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMenu Section</li>
+            <a href="products.html"><li>>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMENU </li></a>
+            <a href="restaurant.html"><li>>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRestaurants</li></a>
+            <a href="products.html"><li>>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMenu Section</li></a>
+            <a href="products.html"><li>>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMenu Section</li></a>
+            <a href="products.html"><li>>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMenu Section</li></a>
           </ul>
         </div>
         <div class="footer_contian_3 col-md-6 col-xs-12 col-sm-6 col-lg-3" ><br>
@@ -364,12 +291,12 @@
   </div>
     <!--Menu Slide-->
     
-              <!--bx Slide Plug in-->
-              <script src="assets/bxSlide/jquery.bxslider.js"></script>
-              <script src="assets/bxSlide/jquery.bxslider.min.js"></script>
-              <link rel="stylesheet" href="assets/bxSlide/jquery.bxslider.css">
-              <link rel="stylesheet" href="assets/bxSlide/jquery.bxslider.min.css">
-              <!--bx Slide Plug in-->
+    <!--bx Slide Plug in-->
+    <script src="assets/bxSlide/jquery.bxslider.js"></script>
+    <script src="assets/bxSlide/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="assets/bxSlide/jquery.bxslider.css">
+    <link rel="stylesheet" href="assets/bxSlide/jquery.bxslider.min.css">
+    <!--bx Slide Plug in-->
     <script type="text/javascript" src="assets/js/slidemenu.js"></script>
     <link rel="stylesheet" href="assets/css/slidemenu.css"> 
   <!--End of menu slide-->
