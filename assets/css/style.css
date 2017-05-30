@@ -218,7 +218,7 @@ body{
   margin: 5px;
 }
 .thum-h1{
-  margin-top: 90px;
+  margin-top: 0px;
 }
 .thum-h2{
   margin-top: 0;
@@ -235,4 +235,22 @@ body{
 }
 .title-2{
   padding: 10px;
+}
+.food-thum{
+  
+}
+.filter-menu{
+  padding: 0;
+}
+.rest-detail{
+  padding: 0;
+}
+.res-active{
+  background: rgb(255, 143, 0);
+}
+.text-banner{
+  position: absolute;
+  bottom: 50px;
+  color: #ff8f00;
+  text-shadow: 1px 1px #ff0000;
 }

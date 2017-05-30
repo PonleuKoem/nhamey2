@@ -133,13 +133,12 @@ ul.nav.navbar-nav>li>a {
     margin: 10px;
     border: 1px solid #ccc;
     float: left;
-    width: 245px;
 }
 
 .contian_product_gallery:hover {
     border: 1px solid #e9b947;
     box-shadow: 2px 2px 2px #e9b947;
-     opacity: 0.5;
+     opacity: 0.8;
     filter: alpha(opacity=100);
     display: block;
 }
@@ -147,6 +146,7 @@ ul.nav.navbar-nav>li>a {
 .contian_product_gallery img{
     width: 100%;
     height: auto;
+    padding: 12px 0 0 0;
 }
 
 .contian_product_gallery_desc {
@@ -195,9 +195,9 @@ ul.nav.navbar-nav>li>a {
 }
 
 .pagination a.active {
-    background-color: #4CAF50;
+    background-color: #ff8f00;
     color: white;
-    border: 1px solid #4CAF50;
+    border: 1px solid #ff8f00;
 }
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
